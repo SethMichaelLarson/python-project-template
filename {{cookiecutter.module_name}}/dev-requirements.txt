@@ -1,5 +1,6 @@
 pytest
 pytest-xdist
+pytest-sugar
 coverage
 codecov
 tox

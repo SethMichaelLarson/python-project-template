@@ -14,9 +14,6 @@
 .. image:: https://img.shields.io/codecov/c/github/{{cookiecutter.github_name}}/{{cookiecutter.repo_name}}/master.svg
     :target: https://codecov.io/gh/{{cookiecutter.github_name}}/{{cookiecutter.repo_name}}
     :alt: Coverage Status
-.. image:: https://img.shields.io/codeclimate/github/{{cookiecutter.github_name}}/{{cookiecutter.repo_name}}.svg
-    :target: https://codeclimate.com/github/{{cookiecutter.github_name}}/{{cookiecutter.repo_name}}
-    :alt: Code Health Status
 .. image:: https://pyup.io/repos/github/{{cookiecutter.github_name}}/{{cookiecutter.repo_name}}/shield.svg
     :target: https://pyup.io/repos/github/{{cookiecutter.github_name}}/{{cookiecutter.repo_name}}
     :alt: Dependency Version Status
