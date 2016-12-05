@@ -1,4 +1,4 @@
-# python_project_template
+# Python Project Template
 Template for all my Python projects on Github. Automatic integration with Python 2.6 - 3.5, Travis, AppVeyor, Codecov, Flake8, and Tox.
 
 ## Usage
