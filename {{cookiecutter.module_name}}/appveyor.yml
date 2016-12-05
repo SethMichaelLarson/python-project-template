@@ -1,0 +1,67 @@
+# AppVeyor.yml from https://github.com/ogrisel/python-appveyor-demo
+# License: CC0 1.0 Universal: http://creativecommons.org/publicdomain/zero/1.0/
+
+build: off
+
+environment:
+  global:
+    # SDK v7.0 MSVC Express 2008's SetEnv.cmd script will fail if the
+    # /E:ON and /V:ON options are not enabled in the batch script intepreter
+    # See: http://stackoverflow.com/a/13751649/163740
+    CMD_IN_ENV: "cmd /E:ON /V:ON /C .\\.appveyor\\run_with_env.cmd"
+
+  matrix:
+    # Python 2.x Builds
+    - PYTHON: "C:\\Python266-x64"
+      PYTHON_VERSION: "2.6.6"
+      PYTHON_ARCH: "64"
+      TOXENV: "py26"
+
+    - PYTHON: "C:\\Python27-x64"
+      PYTHON_VERSION: "2.7.x"
+      PYTHON_ARCH: "64"
+      TOXENV: "py27"
+
+    # Python 3.x Builds
+    - PYTHON: "C:\\Python33-x64"
+      PYTHON_VERSION: "3.3.x"
+      PYTHON_ARCH: "64"
+      TOXENV: "py33"
+
+    - PYTHON: "C:\\Python34-x64"
+      PYTHON_VERSION: "3.4.x"
+      PYTHON_ARCH: "64"
+      TOXENV: "py34"
+
+    - PYTHON: "C:\\Python35-x64"
+      PYTHON_VERSION: "3.5.x"
+      PYTHON_ARCH: "64"
+      TOXENV: "py35"
+
+install:
+  # Install Python (from the official .msi of http://python.org) and pip when
+  # not already installed.
+  - ps: if (-not(Test-Path($env:PYTHON))) { & .appveyor\install.ps1 }
+
+  # Prepend newly installed Python to the PATH of this build (this cannot be
+  # done from inside the powershell script as it would require to restart
+  # the parent CMD process).
+  - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+
+  # Check that we have the expected version and architecture for Python
+  - "python --version"
+  - "python -c \"import struct; print(struct.calcsize('P') * 8)\""
+
+  # Upgrade to the latest version of pip to avoid it displaying warnings
+  # about it being out of date.
+  - "pip install --disable-pip-version-check --user --upgrade pip"
+  - "pip install tox"
+
+test_script:
+  - "%CMD_IN_ENV% tox"
+
+on_success:
+  - ".tox\\%TOXENV%\\Scripts\\activate"
+  - "pip install codecov"
+- "codecov --env PLATFORM,TOXENV"
+

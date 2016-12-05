@@ -1,0 +1,7 @@
+{
+  "full_name": "Seth Michael Larson",
+  "email": "sethmichaellarson@protonmail.com",
+  "module_name": "module",
+  "github_name": "SethMichaelLarson",
+  "repo_name": "{{ cookiecutter.module_name }}"
+}
