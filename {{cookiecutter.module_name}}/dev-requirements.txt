@@ -1,7 +1,6 @@
+codeclimate_test_reporter
+coverage
 pytest
 pytest-cov
 pytest-sugar
-coverage
-codecov
 tox
-
