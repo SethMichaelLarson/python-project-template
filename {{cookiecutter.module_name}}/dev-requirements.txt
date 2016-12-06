@@ -1,4 +1,4 @@
-codeclimate-test-reporter
+codecov
 coverage
 pytest
 pytest-cov
