@@ -9,7 +9,7 @@ Author
 License
 -------
 
-Copied from `LICENSE.txt <https://github.com/{{cookiecutter.github_name}}/{{cookiecutter.github_repo}}/blob/master/LICENSE.txt>`_::
+Copied from `LICENSE.txt <https://github.com/{{cookiecutter.github_name}}/{{cookiecutter.github_repo}}/blob/master/LICENSE.txt>`_:
 
 .. include:: ../../LICENSE.txt
 
