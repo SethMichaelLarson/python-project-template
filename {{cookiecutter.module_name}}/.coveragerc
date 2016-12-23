@@ -11,4 +11,3 @@ exclude_lines =
     .* # Platform-specific.*
     .*:.* # Python \d.*
     .* # Skip coverage.*
-

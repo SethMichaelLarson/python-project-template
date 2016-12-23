@@ -1,0 +1,15 @@
+{
+  "maxReviewers": 3,
+  "numFilesToCheck": 10,
+  "message": "Thanks @pullRequester for the Pull Request! Reviewers will respond shortly. I've identified @reviewers as potential reviewers.",
+  "findPotentialReviewers": true,
+  "fileBlacklist": ["*.rst"],
+  "userBlacklist": [],
+  "userBlacklistForPR": [],
+  "requiredOrgs": [],
+  "actions": ["opened"],
+  "skipAlreadyAssignedPR": false,
+  "skipAlreadyMentionedPR": false,
+  "assignToReviewer": true,
+  "delayed": false
+}

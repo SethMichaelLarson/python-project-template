@@ -6,4 +6,3 @@ coverage:
         project:
             default:
                 target: '100'
-

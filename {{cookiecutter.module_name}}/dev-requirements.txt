@@ -1,6 +1,4 @@
-codecov
-coverage
-pytest
-pytest-cov
-pytest-sugar
-tox
+nose==1.3.7
+coverage==4.2
+codecov==2.0.5
+Sphinx==1.5.1

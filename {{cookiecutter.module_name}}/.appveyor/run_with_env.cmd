@@ -1,4 +1,4 @@
- :: To build extensions for 64 bit Python 3, we need to configure environment
+:: To build extensions for 64 bit Python 3, we need to configure environment
 :: variables to use the MSVC 2010 C++ compilers from GRMSDKX_EN_DVD.iso of:
 :: MS Windows SDK for Windows 7 and .NET Framework 4 (SDK v7.1)
 ::
@@ -30,6 +30,7 @@
 :: outside of the IF clauses, they do not run properly in the SET_SDK_64==Y
 :: case, I don't know why.
 @ECHO OFF
+
 SET COMMAND_TO_RUN=%*
 SET WIN_SDK_ROOT=C:\Program Files\Microsoft SDKs\Windows
 SET WIN_WDK=c:\Program Files (x86)\Windows Kits\10\Include\wdf
@@ -85,4 +86,3 @@ IF %PYTHON_ARCH% == 64 (
     ECHO Executing: %COMMAND_TO_RUN%
     call %COMMAND_TO_RUN% || EXIT 1
 )
-

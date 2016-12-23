@@ -1,15 +1,29 @@
-* {{cookiecutter.module_name}} version:
-* Python version:
-* Operating System:
+#### Version / Platform Info
+- {{cookiecutter.module_display_name}} Version:
+- Happens in latest version? (Yes/No): 
+- Known Operating System(s) affected__:
+  - [ ] Windows
+  - [ ] Linux
+  - [ ] Mac OS
 
-### Description
+#### Expected Behavior
 
-Describe what you were trying to get done.
-Tell us what happened, what went wrong, and what you expected to happen.
+Explain what is expected to happen when the code runs.
 
-### What I Did
+#### Actual Behavior
 
-```
-Paste the command(s) you ran and the output.
-If there was a crash, please include the traceback here.
+Explain what actually happens when the code is run.
+
+#### Minimal Example of Issue
+
+Show a minimal example to get this issue to occur.
+This will significantly speed up the amount of time it 
+takes to debug and resolve the issue for our contributors.
+
+```python
+import {{cookiecutter.module_name}}
+
+# Please show the smallest possible example where
+# the issue occurs. This will drastically decrease
+# the amount of time it will take to solve the issue.
 ```

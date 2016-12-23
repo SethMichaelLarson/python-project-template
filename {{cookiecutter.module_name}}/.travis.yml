@@ -3,9 +3,15 @@ sudo: false
 
 matrix:
   include:
+    # Flake8 Style Checking
+    - python: 3.5
+      env: TOXENV=flake8
+
+    # Flake8 Linter
+    - python: 3.5
+      env: TOXENV=docs
+
     # Linux Builds
-    - python: 2.6
-      env: TOXENV=py26
     - python: 2.7
       env: TOXENV=py27
     - python: 3.3
@@ -14,19 +20,12 @@ matrix:
       env: TOXENV=py34
     - python: 3.5
       env: TOXENV=py35
-
-    # Flake8
-    - python: 3.5
-      env: TOXENV=flake8
-
-    # PyPy
-    - python: pypy-5.4
-      env: TOXENV=pypy
+    - python: 3.6-dev
+      env: TOXENV=py36
+    - python: nightly
+      env: TOXENV=py37
 
     # OSX Builds
-    - language: generic
-      os: osx
-      env: TOXENV=py26
     - language: generic
       os: osx
       env: TOXENV=py27
@@ -39,18 +38,14 @@ matrix:
     - language: generic
       os: osx
       env: TOXENV=py35
-
-  # Allow PyPy to fail without failing the build.
-  allow_failures:
-    - python: pypy-5.4
+    - language: generic
+      os: osx
+      env: TOXENV=py36
 
 cache:
   - pip
   - directories:
     - ${HOME}/.cache
-
-before_install:
-  - openssl version
 
 install:
   - chmod a+x ./.travis/install.sh ./.travis/run.sh ./.travis/upload_coverage.sh
@@ -63,4 +58,9 @@ after_success:
   - ./.travis/upload_coverage.sh
 
 notifications:
-email: false
+  email: false
+
+branches:
+  only:
+  - master
+  - release
