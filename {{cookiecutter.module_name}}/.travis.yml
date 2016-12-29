@@ -38,6 +38,9 @@ matrix:
     - language: generic
       os: osx
       env: TOXENV=py35
+    - language: generic
+      os: osx
+      env: TOXENV=py36
 
 cache:
   - pip
