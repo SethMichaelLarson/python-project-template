@@ -23,6 +23,18 @@ It'll ask you a few questions like your Github user name, repo name, etc::
     
 Do a quick look at all ``.rst`` files to make sure the number of underlines is correct for titles. :)
 And voila! Ready to be commited as your initial commit!
+
+After this commit, you should sign up for the following services and set their permissions on Github:
+
+* `Travis CI <https://travis-ci.org/>`_
+* `AppVeyor <https://ci.appveyor.com/projects>`_
+* `PyUp <https://pyup.io/>`_
+* `Codecov <https://codecov.io/gh>`_
+* `CodeClimate <https://codeclimate.com>`_
+* `Readthedocs <https://readthedocs.org/>`_
+
+And you should be ready to go! Happy committing!
+
 Be sure to change the licenses everywhere if you're using something besides MIT and the year on the Copyright.
 All of my Python projects are MIT, that's why I use it as a default. :)
 
