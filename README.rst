@@ -32,6 +32,7 @@ After this commit, you should sign up for the following services and set their p
 * `Codecov <https://codecov.io/gh>`_
 * `CodeClimate <https://codeclimate.com>`_
 * `Readthedocs <https://readthedocs.org/>`_
+* `Mention Bot <https://github.com/facebook/mention-bot>`_
 
 And you should be ready to go! Happy committing!
 
