@@ -47,3 +47,6 @@ If you've got a question or a suggestion just create an issue in the Github issu
 License
 -------
 This template is licensed under CC0-1.0.
+
+This means you can do whatever you want with this code and you don't even have to mention my name anywhere! :D
+If you find the template useful leaving me a line or tweeting at me is greatly appreciated! <3
