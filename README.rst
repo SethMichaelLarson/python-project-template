@@ -20,6 +20,16 @@ Then run cookiecutter to get the latest version of the template.
 It'll ask you a few questions like your Github user name, repo name, etc::
 
     $ cookiecutter gh:SethMichaelLarson/python_project_template
+
+Be sure to change the licenses everywhere if you're using something besides MIT and the year on the Copyright.
+All of my Python projects are MIT, that's why I use it as a default. :)
+
+The files you should change if you're using a non-MIT license are:
+
+* `LICENSE.txt`
+* `README.rst`
+* `docs/source/index.rst`
+* `docs/source/about.rst`
     
 Do a quick look at all ``.rst`` files to make sure the number of underlines is correct for titles. :)
 And voila! Ready to be commited as your initial commit!
@@ -35,9 +45,6 @@ After this commit, you should sign up for the following services and set their p
 * `Mention Bot <https://github.com/facebook/mention-bot>`_
 
 And you should be ready to go! Happy committing!
-
-Be sure to change the licenses everywhere if you're using something besides MIT and the year on the Copyright.
-All of my Python projects are MIT, that's why I use it as a default. :)
 
 Questions / Suggestions
 -----------------------
