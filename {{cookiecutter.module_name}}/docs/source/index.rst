@@ -1,4 +1,4 @@
-Artisan ❤️ Automation
+{{cookiecutter.module_display_name}}
 =====================
 
 .. toctree::
