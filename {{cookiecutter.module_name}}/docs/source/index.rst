@@ -27,7 +27,7 @@ To install the latest development version from `Github <https://github.com/{{coo
 If your current Python installation doesn't have pip available, try `get-pip.py <bootstrap.pypa.io>`_
 
 After installing {{cookiecutter.module_display_name}} you can use it like any other Python module.
-Here's a very simple demonstration of scheduling a single job on a farm.
+Here's a very simple example:
 
 .. code-block:: python
 
