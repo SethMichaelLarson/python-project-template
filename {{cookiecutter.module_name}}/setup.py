@@ -22,7 +22,7 @@ with open('requirements.txt') as f:
     requirements = [line for line in f.read().split('\n') if len(line.strip())]
 
 
-packages = find_packages(os.path.join(base_path, base_package))
+packages = [base_package + '.' + x for x in find_packages(os.path.join(base_path, base_package))]
 if base_package not in packages:
     packages.append(base_package)
 
@@ -53,6 +53,5 @@ if __name__ == '__main__':
                      'Programming Language :: Python :: 3.3',
                      'Programming Language :: Python :: 3.4',
                      'Programming Language :: Python :: 3.5',
-                     'Programming Language :: Python :: 3.6',
-                     'Programming Language :: Python :: 3.7']
+                     'Programming Language :: Python :: 3.6']
     )
