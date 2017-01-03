@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Artisan documentation build configuration file, created by
-# sphinx-quickstart on Tue Dec 13 14:22:51 2016.
-#
 # This file is execfile()d with the current directory set to its
 # containing dir.
 #
