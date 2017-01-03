@@ -1,4 +1,4 @@
 API Reference
 =============
 
-This API reference covers Artisan's usage & API documentation.
+This API reference covers {{cookiecutter.module_display_name}}'s usage & API documentation.
