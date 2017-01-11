@@ -13,7 +13,7 @@ These are the steps to take to create a release of the module ``{{cookiecutter.m
 2. Update the following files with the correct version.
 
     - ``{{cookiecutter.module_name}}/__init__.py``
-    - ``{{CHANGELOG.rst}}``
+    - ``CHANGELOG.rst``
     
 3. Add and commit the changes.
 
