@@ -39,6 +39,11 @@ if __name__ == '__main__':
         author_email='{{cookiecutter.email}}',
         maintainer='{{cookiecutter.full_name}}',
         maintainer_email='{{cookiecutter.email}}',
+        entry_points={
+            'console_scripts': [
+                '{{cookiecutter.module_name}} = {{cookiecutter.module_name}}.cli:main'
+            ]
+        },
         install_requires=requirements,
         keywords=['{{cookiecutter.module_name}}'],
         packages=packages,
